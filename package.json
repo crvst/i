@@ -1,0 +1,19 @@
+{
+  "name": "i",
+  "version": "0.1.0",
+  "description": "Frontend basic things",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crvst/i.git"
+  },
+  "keywords": [
+    "dotfiles",
+    "frontend"
+  ],
+  "author": "Bogdan Slovyagin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crvst/i/issues"
+  },
+  "homepage": "https://github.com/crvst/i"
+}
