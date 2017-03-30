@@ -1,0 +1,59 @@
+box-shadow-short(spread, opacity)
+  box-shadow: 0 2px spread 0 rgba($black, opacity)
+
+-webkit-line-clamp()
+  if arguments
+    -webkit-line-clamp: arguments
+  else
+    -webkit-line-clamp: 3
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  white-space: initial
+
+outlineStyle()
+  outline-color: #000
+  outline-width: 1px
+
+// Hovers
+
+// CSS-modules
+handheld-hover()
+  :global .html--notHandheld :local &:hover
+    {block}
+
+  :global .html--handheld :local &:active
+    {block}
+
+// Global css
+g-handheld-hover()
+  :global .html--notHandheld &:hover
+    {block}
+
+  :global .html--handheld &:active
+    {block}
+
+transitionDefault()
+  transition-property: arguments || all
+  transition-duration: .3s
+  transition-timing-function: ease-out
+  transition-delay: 0s
+
+size($width, $height = $width)
+  width $width
+  height $height
+
+margin-x($margin)
+  margin-left $margin
+  margin-right $margin
+
+margin-y($margin)
+  margin-top $margin
+  margin-bottom $margin
+
+padding-x($padding)
+  padding-left $padding
+  padding-right $padding
+
+padding-y($padding)
+  padding-top $padding
+  padding-bottom $padding

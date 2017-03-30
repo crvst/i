@@ -1,0 +1,36 @@
+@import '~normalize.css/normalize.css'
+@import '~sanitize.css/sanitize.css'
+@import 'assets/styles/*'
+
+html
+button
+input
+textarea
+select
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-family: Avenir, Helvetica, Arial, sans-serif
+
+a
+  color: inherit
+  text-decoration: none
+  cursor: pointer
+
+h1
+h2
+h3
+h4
+h5
+h6
+  margin-y: 0
+
+p
+  margin-y: 0
+
+p + p
+  padding-top: 1em
+
+/* Overriding sanitize.css rule */
+svg
+  fill: unset
