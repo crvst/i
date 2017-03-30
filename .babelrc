@@ -1,0 +1,40 @@
+{
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react",
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "safari >= 8"
+          ]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "jsx-control-statements",
+    "transform-class-properties",
+    [
+      "transform-runtime",
+      {
+        "polyfill": true,
+        "regenerator": true
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        "react-optimize"
+      ],
+      "plugins": [
+        "transform-flow-strip-types",
+        "jsx-control-statements"
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="html html--initial">
+<head>
+  <style id="loading-style">
+    html {
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+    }
+
+    .loading {
+      margin: 100px auto 0;
+      text-align: center;
+      font-size: 0;
+    }
+
+    .b {
+      width: 8px;
+      height: 8px;
+      margin: 0 4px;
+      background-color: #5476a4;
+      border-radius: 100%;
+      display: inline-block;
+      -webkit-animation: a 1s infinite ease-in-out both;
+      animation: a 1s infinite ease-in-out both;
+    }
+
+    .b--1 {
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+
+    .b--2 {
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+      background-color: #49b848;
+    }
+
+    .b--3 {
+      background-color: #f47a20;
+    }
+
+    @-webkit-keyframes a {
+      0%, 80%, 100% {
+        -webkit-transform: scale(0)
+      }
+      40% {
+        -webkit-transform: scale(1.0)
+      }
+    }
+
+    @keyframes a {
+      0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+      40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="loading" id="loading"></div>
+<div id="root"></div>
+<div id="svg"></div>
+</body>
+</html>

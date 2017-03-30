@@ -1,0 +1,7 @@
+*.test.js
+*.spec.js
+scripts
+config
+__tests__
+**/vendor/*.js
+**/libs/*.js
